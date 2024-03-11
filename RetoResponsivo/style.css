@@ -21,7 +21,6 @@ header a{
     color: white;
     text-decoration: none;
     margin: 0 1em;
-    font-size: 1.2em;
 }
 
 @media (min-width:500px) {
@@ -61,6 +60,10 @@ header a{
     color: rgb(110, 110, 110);
     cursor: pointer;
     background-color: rgb(188, 190, 192);
+}
+
+.options a{
+   color: rgb(0, 153, 255);
 }
 
 
@@ -144,6 +147,11 @@ header a{
         text-overflow: ellipsis;
         overflow: hidden;
         
+    }
+
+    .options a{
+        grid-row: 4/5;
+        grid-column: 3/4;
     }
 
 
