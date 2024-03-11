@@ -1,0 +1,132 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 ;    
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 1.2em;
+}
+
+@media (min-width:500px) {
+    #icon-menu{
+        display:none;        
+    }
+}
+
+
+#icon-menu:hover{
+    color: rgb(110, 110, 110);
+    cursor: pointer;
+    background-color: rgb(188, 190, 192);
+}
+
+.options p{    
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+.options{
+    padding-top: 300px;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.options>div{
+    background-color: rgb(240, 243, 247);
+    border: solid 2px rgb(110, 110, 110);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.options>div:hover{
+    background-color: rgb(165, 165, 165);
+    cursor: pointer;
+}
+
+.options img{
+    width: 200px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 550px){
+    
+    #icon-menu{
+    display:;
+    border: solid 1px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    display: block;
+    
+    }
+
+    header>nav{
+        display: none;
+    }
+    
+    .options>div{
+        width: 400px;
+        height: 400px;
+        min-width: 400px;
+        background-color: rgb(194, 194, 194);
+        border: solid 2px rgb(110, 110, 110);
+        border-radius: 15px;
+        margin: 10px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(4 ,4fr); 
+        grid-template-rows: repeat(8 ,1fr);             
+    }
+    .options h3{
+        text-wrap: nowrap;
+        margin-bottom: 50px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .options p{        
+        margin-bottom: 50px;
+        grid-column: 2 /5;
+        grid-row: 2/4;
+    }
+
+    .options img{
+        grid-row: 1/4;
+        grid-column: 1/2;        
+        border-radius: 15px;
+        margin: 10px;
+    }
+
+    .options small{
+        grid-column: 3/3;
+        grid-row: 4/5;
+        font-size: 1.3em;
+    }
+
+
+}
+
