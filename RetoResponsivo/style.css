@@ -86,8 +86,7 @@ header a{
 
 @media only screen and (max-width: 600px){
     
-    #icon-menu{
-    display:;
+    #icon-menu{    
     border: solid 1px;
     padding: 15px 20px;
     font-size: 1.2em;
