@@ -26,9 +26,35 @@ header a{
 
 @media (min-width:500px) {
     #icon-menu{
-        display:none;        
+        display:none; 
     }
 }
+    .options>div{
+        background-color: rgb(240, 243, 247);
+        border: solid 2px rgb(110, 110, 110);
+        border-radius: 15px;
+        margin: 10px;
+        padding: 5px;
+        width: 250px;
+        height: 450px;
+    }
+
+    .options img{
+        width: 230px;
+        height: 240px;
+        border-radius: 15px;
+        margin: 10px;
+    }
+
+    .options p{    
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        
+    }
+
 
 
 #icon-menu:hover{
@@ -37,14 +63,7 @@ header a{
     background-color: rgb(188, 190, 192);
 }
 
-.options p{    
-    display: -webkit-box;
-    -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    
-}
+
 
 .options{
     padding-top: 300px;    
@@ -53,27 +72,16 @@ header a{
     justify-content: center;
 }
 
-.options>div{
-    background-color: rgb(240, 243, 247);
-    border: solid 2px rgb(110, 110, 110);
-    border-radius: 15px;
-    margin: 10px;
-    padding: 5px;
-}
+
 
 .options>div:hover{
     background-color: rgb(165, 165, 165);
     cursor: pointer;
 }
 
-.options img{
-    width: 200px;
-    height: 350px;
-    border-radius: 15px;
-    margin: 10px;
-}
 
-@media only screen and (max-width: 550px){
+
+@media only screen and (max-width: 600px){
     
     #icon-menu{
     display:;
@@ -88,7 +96,7 @@ header a{
         display: none;
     }
     
-    .options>div{
+    .options>div{       
         width: 400px;
         height: 400px;
         min-width: 400px;
@@ -115,6 +123,8 @@ header a{
     }
 
     .options img{
+        width: 200px;
+        height: 350px;
         grid-row: 1/4;
         grid-column: 1/2;        
         border-radius: 15px;
@@ -122,9 +132,18 @@ header a{
     }
 
     .options small{
-        grid-column: 3/3;
+        grid-column: 2/3;
         grid-row: 4/5;
         font-size: 1.3em;
+    }
+
+    .options p{    
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        
     }
 
 
